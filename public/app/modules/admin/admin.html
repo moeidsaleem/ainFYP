@@ -1,0 +1,31 @@
+
+
+<div class="row" ng-repeat="x in data">
+  
+
+  <div class="col s12">
+   <div class="col s3">
+   <img src="{{x.img}}" class="responsive-img">
+<!--    <img ng-src="{{x.profileImg}}" class="responsive-img">
+ -->   </div>
+
+   <div class="col s6">  
+   <div class="container">
+   <h3 class="left-align">{{x.full_name}}</h3>
+   <p>
+     <!--  <b>Company Name </b> :  {{x.companyName}}   <br/>
+      <b>Designation </b> :  {{x.designation}}   <br/> -->
+      <b>Phone </b> :  {{x.phone}}   <br/>
+      <b>Email </b> :  {{x.email}}   <br/>
+      <b>Address</b> :  {{x.address}}   <br/>
+      <b>Address Company (optional)</b> :  {{x.addressCompany}}   <br/>
+   </p>
+  </div>
+</div>
+
+<div class="col s3">  
+<qrcode data="{{x.full_name}},{{x.phone}}"></qrcode>
+</div>
+
+
+  </div>
